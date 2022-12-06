@@ -1,9 +1,24 @@
-let milage = 600;
-if(milage => 500) {
-    console.log("Yes I think I need an oil change.");
-} else if (milage <= 500) {
-    console.log("My car doesn't need an oil change yet.");
-};
+import React, {Component} from 'react';
+import '../css/Board.css';
 
+class Board extends Component {
+  constructor() {
+    super();
+  }
 
-console.log(milage)
+  render() {
+    return (
+      <div>
+        <div className="div-board">
+          <div className="row">
+          </div>
+        </div>
+        <div>
+          <button className="btn btn-success add-button">Add</button>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default Board;
